@@ -135,7 +135,6 @@ update im_projects set
 	source_language_id =    :source_language_id,
 	subject_area_id =       :subject_area_id,
 	expected_quality_id =   :expected_quality_id,
-	final_company =	 :final_company,
 	trans_project_words =   :trans_project_words,
 	trans_project_hours =   :trans_project_hours
 where
@@ -226,8 +225,6 @@ create table im_projects (
 	-- Should be customer_project_nr. Refers to the customers
 	-- reference to our project.
 	company_project_nr	varchar(200),
-	-- Field indicating the final_customer if we are a subcontractor
-	final_company		varchar(200),
 	-- type of actions pursued during the project 
 	-- implementation, for example "ERP Installation" or
 	-- "ERP Upgrade", ...
