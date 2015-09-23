@@ -62,7 +62,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -125,7 +125,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -146,7 +146,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -166,7 +166,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -186,7 +186,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -206,7 +206,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -228,7 +228,7 @@ BEGIN
 
     v_menu := im_menu__new (
 	null,				-- p_menu_id
-	''acs_object'',			-- object_type
+	''im_menu'',			-- object_type
 	now(),				-- creation_date
 	null,				-- creation_user
 	null,				-- creation_ip
@@ -250,7 +250,7 @@ BEGIN
 
 	v_menu := im_menu__new (
 		null,				-- p_menu_id
-		''acs_object'',			-- object_type
+		''im_menu'',			-- object_type
 		now(),				-- creation_date
 		null,				-- creation_user
 		null,				-- creation_ip
