@@ -18,7 +18,7 @@ ad_page_contract {
 # Defaults & Security
 # ------------------------------------------------------
 
-set current_user_id [ad_maybe_redirect_for_registration]
+set current_user_id [auth::require_login]
 
 # Everybody can see the source code of these tutorials, 
 # so we don't need more security checks here.

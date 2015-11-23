@@ -355,7 +355,7 @@ db_foreach sql $report_sql {
 	# a "hash", depending on the value of "counter".
 	# You need explicite evaluation ("expre") in TCL
 	# to calculate arithmetic expressions. (New!)
-	set class $rowclass([expr $counter % 2])
+	set class $rowclass([expr {$counter % 2}])
 
 	im_report_display_footer \
 	    -group_def $report_def \
