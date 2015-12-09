@@ -38,6 +38,12 @@ set help "
 
 
 
+if {![im_table_exists im_trans_tasks]} {
+    ad_return_complaint 1 "This is a translation report.<br>Translation packages are not installed."
+    ad_script_abort
+}
+
+
 # ------------------------------------------------------------
 # Define the report
 
