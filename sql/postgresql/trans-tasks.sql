@@ -174,7 +174,7 @@ create table im_trans_tasks (
 	task_status_id		integer not null
 				constraint im_trans_tasks_status_fk
 				references im_categories,
-				-- Trados or Ophelia or Xxxx
+				-- Trados or Ophelia or ...
 				-- not a Not Null constraint yet
 	tm_type_id		integer
 				constraint im_trans_tasks_tm_type_fk
