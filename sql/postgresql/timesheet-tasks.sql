@@ -1,8 +1,8 @@
 ------------------------------------------------------------
--- Timesheet Tasks
+-- Gantt Tasks
 ------------------------------------------------------------
 
--- Show everything about a specrific Timesheet Task
+-- Show everything about a specrific Gantt Task
 -- It's a subclass of im_project.
 select  m.*
 from    im_timesheet_tasks_view m
@@ -125,7 +125,7 @@ order by
 	p.uom_id
 
 
--- Updating a Timesheet Task.
+-- Updating a Gantt Task.
 -- The information is spread between two tables,
 -- im_timesheet_tasks and im_projects.
 update im_timesheet_tasks set
@@ -149,7 +149,7 @@ where
 
 
 
--- Create a new Timesheet Task.
+-- Create a new Gantt Task.
 	PERFORM im_timesheet_task__new (
 		:task_id,	       -- p_task_id
 		'im_timesheet_task',    -- object_type
@@ -170,7 +170,7 @@ where
 	);
 
 
--- Delete a Timesheet Task.
+-- Delete a Gantt Task.
 	PERFORM im_task__delete (:task_id);
 
 
@@ -214,7 +214,7 @@ where	project_id = :project_id;
 
 -- Specifies how many units of what material are planned for
 -- each project / subproject / task (all the same...)
--- Timesheet Tasks are now a subtype of project.
+-- Gantt tasks are now a subtype of project.
 -- That may give us some more trouble "nuking" projects, 
 -- but apart from that it's going to simplify the 
 -- GanttProject integration, the hierarchical display of
