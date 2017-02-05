@@ -156,8 +156,7 @@ where
 -- Update a Project's budget
 -- Only available for users with special permissions.
 update	im_projects set
-	project_budget =:project_budget,
-	project_budget_currency =:project_budget_currency
+	project_budget =:project_budget
 where
 	project_id = :project_id;
 
@@ -259,11 +258,6 @@ create table im_projects (
 				check (requires_report_p in ('t','f')),
 				-- Total project budget (top-down planned)
 	project_budget		float,
-	project_budget_currency	char(3)
-				constraint im_costs_paid_currency_fk
-				references currency_codes(iso),
-				-- Max number of hours for project.
-				-- Does not require "view_finance" permission
 	project_budget_hours	float,
 				-- completion perc. estimation
 	percent_completed	float
