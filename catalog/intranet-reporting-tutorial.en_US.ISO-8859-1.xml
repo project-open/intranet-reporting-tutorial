@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <message_catalog package_key="intranet-reporting-tutorial" locale="en_US" charset="ISO-8859-1">
 
+  <msg key="Forum_AdHoc_Report_01">Forum AdHoc Report 01</msg>
+  <msg key="Project_Report_01">Project Report 01</msg>
+  <msg key="Project_Report_02">Project Report 02</msg>
+  <msg key="Project_Report_03">Project Report 03</msg>
+  <msg key="Project_Report_04">Project Report 04</msg>
+  <msg key="Project_Report_05">Project Report 05</msg>
   <msg key="Reporting_Tutorial">Reporting Tutorial</msg>
 </message_catalog>
