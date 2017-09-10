@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message_catalog package_key="intranet-reporting-tutorial" locale="pl_PL" charset="utf-8">
+
+  <msg key="Forum_AdHoc_Report_01">Raport ad hoc z forum 01</msg>
+  <msg key="Project_Report_01">Raport projektowy 01</msg>
+  <msg key="Project_Report_02">Raport projektowy 02</msg>
+  <msg key="Project_Report_03">Raport projektowy 03</msg>
+  <msg key="Project_Report_04">Raport projektowy 04</msg>
+  <msg key="Project_Report_05">Raport projektowy 05</msg>
+  <msg key="Reporting_Tutorial">Tutorial raportowania</msg>
+</message_catalog>
