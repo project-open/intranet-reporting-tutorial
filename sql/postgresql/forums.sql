@@ -61,7 +61,7 @@ from
 			im_biz_object_members m
 		where	r.object_id_two = :user_id
 			and r.rel_id = m.rel_id
-			and m.object_role_id in (1301, 1302, 1303)
+			and m.object_role_id in (1301, 1302, 1303, 1309)
 	) admin_objects using (object_id),
 	acs_objects o
 	LEFT JOIN 
@@ -186,6 +186,7 @@ from
 			(CASE WHEN m.object_role_id = 1301
 			       or m.object_role_id = 1302
 			       or m.object_role_id = 1303
+			       or m.object_role_id = 1309
 			THEN 1
 			ELSE 0 END
 			) as admin_p,
