@@ -158,7 +158,7 @@ ad_return_top_of_page "
 	<!-- Write out the logo stuff and the user info -->
 	[im_header]
 	<!-- Write out the main system navigation bar -->
-	[im_navbar]
+	[im_navbar reporting]
 	<!-- Write out the help text. -->
 	<table cellspacing=0 cellpadding=0 border=0>
 	<tr valign=top>

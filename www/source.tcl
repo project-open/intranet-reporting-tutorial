@@ -60,7 +60,7 @@ if {$error} {
 
 doc_return 200 "text/html" "
 [im_header]
-[im_navbar]
+[im_navbar reporting]
 <pre>[ns_quotehtml $content]</pre>
 [im_footer]
 "
