@@ -291,9 +291,12 @@ set counters [list]
 # parameters (the "value='...' section).
 #
 
-#
-ad_return_top_of_page "
-	[im_header]
+# Write out HTTP header, considering CSV/MS-Excel formatting
+im_report_write_http_headers -output_format "html" -report_name "projects-02"
+
+
+ns_write "
+	[im_header $page_title]
 	[im_navbar reporting]
 	<table cellspacing=0 cellpadding=0 border=0>
 	<tr valign=top>

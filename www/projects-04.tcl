@@ -448,8 +448,9 @@ set expense_total 0
 # parameters (the "value='...' section).
 #
 
-#
-ad_return_top_of_page "
+im_report_write_http_headers -output_format "html" -report_name "projects-04"
+
+ns_write "
 	[im_header]
 	[im_navbar reporting]
 	<table cellspacing=0 cellpadding=0 border=0>

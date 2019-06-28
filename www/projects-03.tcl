@@ -365,9 +365,9 @@ set counters [list]
 # and end_date with default values coming from the input 
 # parameters (the "value='...' section).
 #
+im_report_write_http_headers -output_format "html" -report_name "projects-03"
 
-#
-ad_return_top_of_page "
+ns_write "
 	[im_header]
 	[im_navbar reporting]
 	<table cellspacing=0 cellpadding=0 border=0>
