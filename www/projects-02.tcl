@@ -68,9 +68,20 @@ ad_page_contract {
 # ------------------------------------------------------------
 # Security
 #
-# No security yet - Everybody can see the report if he or she
-# knows that URL of the report.
-#
+
+# Beginners: Please ignore the following lines
+set menu_label "reporting-tutorial-projects02"
+set current_user_id [auth::require_login]
+set read_p [db_string report_perms "select im_object_permission_p(m.menu_id, :current_user_id, 'read') from im_menus m where m.label = :menu_label" -default 'f']
+if {"t" ne $read_p } {
+    set message "You don't have the necessary permissions to view this page"
+    ad_return_complaint 1 "<li>$message"
+    ad_script_abort
+}
+
+
+
+
 
 
 # ------------------------------------------------------------

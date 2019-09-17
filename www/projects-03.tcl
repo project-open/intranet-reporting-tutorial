@@ -54,7 +54,7 @@ ad_page_contract {
 # Menu Item then for the report) and redundancy.
 
 # What is the "label" of the Menu Item linking to this report?
-set menu_label "reporting-tutorial-projects-03"
+set menu_label "reporting-tutorial-projects03"
 
 # Get the current user and make sure that he or she is
 # logged in. Registration is handeled transparently - 
@@ -74,9 +74,6 @@ set read_p [db_string report_perms "
 	from	im_menus m
 	where	m.label = :menu_label
 " -default 'f']
-
-# For testing - set manually
-set read_p "t"
 
 # Write out an error message if the current user doesn't
 # have read permissions and abort the execution of the
