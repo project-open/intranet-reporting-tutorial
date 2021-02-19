@@ -3,7 +3,7 @@
 # Copyright (c) 2003-2006 ]project-open[
 #
 # All rights reserved. 
-# Please see http://www.project-open.com/ for licensing.
+# Please see https://www.project-open.com/ for licensing.
 
 
 # ------------------------------------------------------------
@@ -48,7 +48,7 @@
 # with their default values.
 # You can overwrite the default values by specifying the
 # parameters in the URL, for example:
-# http://your_server/intranet-reporting-tutorial/ ...
+# https://your_server/intranet-reporting-tutorial/ ...
 # ... /projects-02?start_date=2006-01-01&end_date=2006-12-31
 #
 
